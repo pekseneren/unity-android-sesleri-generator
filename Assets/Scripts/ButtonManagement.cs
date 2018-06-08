@@ -15,16 +15,22 @@ public class ButtonManagement : MonoBehaviour {
     public TextMeshProUGUI TabText;
     public Transform ViewPort;
     public static AudioSource auidoSource;
-
+    
     // Use this for initialization
     void Start()
     {
+        PATHS.Clear();
         auidoSource = GameObject.FindWithTag("Source").GetComponent<AudioSource>();
 
-        foreach (var path in PATHS)
+        var paths = Directory.GetDirectories(Application.dataPath + "/Resources");
+        
+        foreach (var path in paths)
         {
-            CreateContet(path);
-            Debug.Log("kaç kere" + path);
+            var temp = path.Split('\\');
+            Debug.Log("p:");
+            CreateContet(temp[temp.Length - 1]);
+            PATHS.Add(temp[temp.Length - 1]);
+            //Debug.Log("kaç kere" + path);
         }
 
         ViewPort.GetChild(0).gameObject.SetActive(true);
