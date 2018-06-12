@@ -9,7 +9,7 @@ public class DynamicPlay : MonoBehaviour {
 
     public void PlayAuido()
     {
-        ButtonManagement.auidoSource.Stop();
-        ButtonManagement.auidoSource.PlayOneShot(auido);
+        ButtonManager.auidoSource.Stop();
+        ButtonManager.auidoSource.PlayOneShot(auido);
     }
 }

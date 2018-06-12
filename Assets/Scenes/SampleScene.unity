@@ -301,8 +301,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286603601
-  m_fontColor: {r: 0.31764707, g: 0.38039216, b: 0.5019608, a: 1}
+    rgba: 4290017359
+  m_fontColor: {r: 0.31038624, g: 0.47253954, b: 0.7075472, a: 1}
   m_enableVertexGradient: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -987,7 +987,7 @@ GameObject:
   - component: {fileID: 1120630037}
   - component: {fileID: 1120630036}
   m_Layer: 0
-  m_Name: ButtonManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1001,19 +1001,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1120630035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e86dc4e869ef461419365975b4ca2284, type: 3}
+  m_Script: {fileID: 11500000, guid: 5396f56d302bc5f41b8e44ef85611b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PATHS:
-  - hakan
-  - ferdi
+  PATHS: []
   ButtonPrefab: {fileID: 1541672494435922, guid: ca04da9d022f6b74c90daa144398ebc1,
     type: 2}
   PanelPrefab: {fileID: 1623817508620280, guid: 2fbe2a89723392945af6122e0b4c3618,
     type: 2}
   ScrollView: {fileID: 1318444687}
-  TabText: {fileID: 224892339}
   ViewPort: {fileID: 594873272}
+  TabText: {fileID: 224892339}
 --- !u!4 &1120630037
 Transform:
   m_ObjectHideFlags: 0
@@ -1074,7 +1072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
