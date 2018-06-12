@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 180420644}
   - component: {fileID: 180420643}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Rastgele Ses
+  m_text: Random Clip
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 163292f6f226d954593d45b079f8aae0, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: 163292f6f226d954593d45b079f8aae0, type: 2}
@@ -367,11 +367,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1042,6 +1042,7 @@ RectTransform:
   - {fileID: 1278074545}
   - {fileID: 436372216}
   - {fileID: 224892338}
+  - {fileID: 2124904302}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1077,8 +1078,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2124904302}
+  m_Children: []
   m_Father: {fileID: 1318444688}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1476,7 +1476,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 594873272}
+    m_TransformParent: {fileID: 568775316}
     m_Modifications:
     - target: {fileID: 224186707000305454, guid: 2fbe2a89723392945af6122e0b4c3618,
         type: 2}
@@ -1516,27 +1516,27 @@ Prefab:
     - target: {fileID: 224186707000305454, guid: 2fbe2a89723392945af6122e0b4c3618,
         type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224186707000305454, guid: 2fbe2a89723392945af6122e0b4c3618,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 29
+      value: -0.2999878
       objectReference: {fileID: 0}
     - target: {fileID: 224186707000305454, guid: 2fbe2a89723392945af6122e0b4c3618,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -138
+      value: -247.73438
       objectReference: {fileID: 0}
     - target: {fileID: 224186707000305454, guid: 2fbe2a89723392945af6122e0b4c3618,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 695.89954
+      value: 661.29956
       objectReference: {fileID: 0}
     - target: {fileID: 224186707000305454, guid: 2fbe2a89723392945af6122e0b4c3618,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -1280
       objectReference: {fileID: 0}
     - target: {fileID: 224186707000305454, guid: 2fbe2a89723392945af6122e0b4c3618,
         type: 2}
@@ -1578,6 +1578,14 @@ Prefab:
       propertyPath: m_CellSize.y
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 1623817508620280, guid: 2fbe2a89723392945af6122e0b4c3618, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623817508620280, guid: 2fbe2a89723392945af6122e0b4c3618, type: 2}
+      propertyPath: m_Name
+      value: RandomPanel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fbe2a89723392945af6122e0b4c3618, type: 2}
   m_IsPrefabParent: 0
@@ -1593,12 +1601,12 @@ GameObject:
   - component: {fileID: 1680726087}
   - component: {fileID: 1680726086}
   m_Layer: 5
-  m_Name: Button
+  m_Name: RandomButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1680726085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1613,10 +1621,10 @@ RectTransform:
   m_Father: {fileID: 2124904302}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 730.6498, y: -100}
+  m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1680726086
 MonoBehaviour:
