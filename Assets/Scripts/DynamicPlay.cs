@@ -7,9 +7,14 @@ public class DynamicPlay : MonoBehaviour {
     public AudioClip auido;
     //public AudioSource AudioSource;
 
+    private void Awake()
+    {
+        ButtonManager.Buttons.Add(this);
+    }
+
     public void PlayAuido()
     {
-        ButtonManager.auidoSource.Stop();
-        ButtonManager.auidoSource.PlayOneShot(auido);
+        ButtonManager.audioSource.Stop();
+        ButtonManager.audioSource.PlayOneShot(auido);
     }
 }

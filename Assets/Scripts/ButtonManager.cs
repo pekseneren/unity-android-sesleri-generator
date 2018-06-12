@@ -7,8 +7,9 @@ using TMPro;
 
 public class ButtonManager : MonoBehaviour {
 
-    public static AudioSource auidoSource;
+    public static AudioSource audioSource;
 
+    public static List<DynamicPlay> Buttons = new List<DynamicPlay>();
     public List<string> PATHS = new List<string>();
     public Dictionary<int, Transform> Panels = new Dictionary<int, Transform>();
     public GameObject ButtonPrefab;
@@ -17,11 +18,15 @@ public class ButtonManager : MonoBehaviour {
     public Transform ViewPort;
     public TextMeshProUGUI TabText;
 
+    private void Awake()
+    {
+        Buttons.Clear();
+        PATHS.Clear();
+    }
 
     void Start()
     {
-        PATHS.Clear();
-        auidoSource = GameObject.FindGameObjectWithTag("Source").GetComponent<AudioSource>();
+        audioSource = GameObject.FindGameObjectWithTag("Source").GetComponent<AudioSource>();
 
         var paths = Directory.GetDirectories(Application.dataPath + "/Resources");
         
@@ -88,5 +93,10 @@ public class ButtonManager : MonoBehaviour {
     public void LeftChange()
     {
         ChangeTab(-1);
+    }
+
+    public void RandomClip()
+    {
+        Buttons[Random.Range(0, Buttons.Count - 1)].PlayAuido();
     }
 }
